@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .important-person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
+        }
+
+        .important-person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            filter: blur(5px);
+            opacity: 0.7;
+            transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .important-person span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .important-person:hover img {
+            filter: blur(0);
+            opacity: 1;
+        }
+
+        .important-person:hover span {
+            opacity: 1;
+        }
+        #top-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .person-table {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .person {
+            margin: 10px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .person img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            filter: blur(5px);
+            opacity: 0.7;
+            transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .person span {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .person:hover img {
+            filter: blur(0);
+            opacity: 1;
+        }
+
+        .person:hover span {
+            opacity: 1;
+        }
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+	<img id="top-image" src="image/limbus.png" alt="Top Image">
+    <video id="video-background" playsinline="true" muted="true" autoplay="true" loop>
+      <source src="image/setup.mp4" type="video/mp4">
+    </video>
+	
+    <div class="important-person">
+        <a href="web/sins (10).html">
+            <img src="image/头像-但丁.png" alt="Important Person">
+            <span>NO.10 但丁</span>
+        </a>
+    </div>
+    <div class="person-table">
+<!-- 人物1 -->
+<div class="person">
+    <a href="web/sins (1).html">
+        <img src="image/证件照-李箱.png" alt="Person 1">
+        <span>NO.1 李箱</span>
+    </a>
+</div>
+
+<!-- 人物2 -->
+<div class="person">
+    <a href="web/sins (2).html">
+        <img src="image/证件照-浮士德.png" alt="Person 2">
+        <span>NO.2 浮士德</span>
+    </a>
+</div>
+
+<!-- 人物3 -->
+<div class="person">
+    <a href="web/sins (3).html">
+        <img src="image/证件照-堂吉诃德.png" alt="Person 3">
+        <span>NO.3 堂吉诃德</span>
+    </a>
+</div>
+
+<!-- 人物4 -->
+<div class="person">
+    <a href="web/sins (4).html">
+        <img src="image/证件照-良秀.png" alt="Person 4">
+        <span>NO.4 良秀</span>
+    </a>
+</div>
+
+<!-- 人物5 -->
+<div class="person">
+    <a href="web/sins (5).html">
+        <img src="image/证件照-默尔索.png" alt="Person 5">
+        <span>NO.5 默尔索</span>
+    </a>
+</div>
+
+<!-- 人物6 -->
+<div class="person">
+    <a href="web/sins (6).html">
+        <img src="image/证件照-鸿璐.png" alt="Person 6">
+        <span>NO.6 鸿璐</span>
+    </a>
+</div>
+
+<!-- 人物7 -->
+<div class="person">
+    <a href="web/sins (7).html">
+        <img src="image/证件照-希斯克利夫.png" alt="Person 7">
+        <span>NO.7 希斯克利夫</span>
+    </a>
+</div>
+
+<!-- 人物8 -->
+<div class="person">
+    <a href="web/sins (8).html">
+        <img src="image/证件照-以实玛利.png" alt="Person 8">
+        <span>NO.8 以实玛利</span>
+    </a>
+</div>
+
+<!-- 人物9 -->
+<div class="person">
+    <a href="web/sins (9).html">
+        <img src="image/证件照-罗佳.png" alt="Person 9">
+        <span>NO.9 罗佳</span>
+    </a>
+</div>
+
+<!-- 人物10 -->
+<div class="person">
+    <a href="web/sins (11).html">
+        <img src="image/证件照-辛克莱.png" alt="Person 10">
+        <span>NO.11 辛克莱</span>
+    </a>
+</div>
+
+<!-- 人物11 -->
+<div class="person">
+    <a href="web/sins (12).html">
+        <img src="image/证件照-奥提斯.png" alt="Person 11">
+        <span>NO.12 奥提斯</span>
+    </a>
+</div>
+
+<!-- 人物12 -->
+<div class="person">
+    <a href="web/sins (13).html">
+        <img src="image/证件照-格里高尔.png" alt="Person 12">
+        <span>NO.13 格里高尔</span>
+    </a>
+</div>
+<button id="return-button" onclick="window.location.href='https://nepnepnoire.github.io/nep425.github.io/'">返回</button>
+    </div>
+
+</body>
+</html>

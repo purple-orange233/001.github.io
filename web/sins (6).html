@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 400px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/鸿璐立绘.png" alt="Person Image" width="400" height="450" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/鸿璐logo.png" alt="Small Image" width="60" height="64"></h2>
+            <p>
+                
+鸿璐是LC-B（即边狱公司巴士部）的一位罪人，编号为061</p>
+            <p> 特质：富家阔少，缺乏常识</p>
+            <p> 该罪人在成为我司的资产前过着富足的生活。因此，虽然他对自由有所向往，但也偶尔会在见到其他罪人制作的食物时显露出对底层文化的无知，并提出触碰其他罪人雷区的冒犯性问题。不过，由于其提问并非出于讽刺，而仅仅是纯粹的好奇使然，让罪人们为此大动干戈并非合适的解决方法。</p>
+            <p> 相关考据              </p>
+            <p>在六协会鸿璐的人格晋升剧情中，鸿璐对六协成员讲述了自己左眼青色瞳是生下来就有的类似义眼的事物，似乎对应着《红楼梦》中通灵宝玉的故事。 以下为原著“程本”相关记述：女娲补天之时，炼成补天石三万六千五百零一块，单单剩了一块未用，弃在青埂峰下。此剩一石自经煅炼之后，灵性已通，得换人形。太虚幻境警幻仙子命他为赤霞宫神瑛侍者。他却常在西方灵河岸上行走，对绛珠仙草（林黛玉前世，属木）施以甘露之惠，相互许下木石前盟（神瑛侍者属石，推知他的前世为神瑛仙石 ）。后因凡心偶炽，被一僧一道携入红尘，幻化为通灵宝玉（形），其真身即转世为贾宝玉（质）。待劫终之日，人与玉“形质归一”，变回青埂峰下那块高经十二丈、方经二十四丈的女娲补天所剩之石，上面编述有《石头记》原稿，静候有缘人空空道人抄去问世传奇。 </p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>

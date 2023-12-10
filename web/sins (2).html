@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 395px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/浮士德立绘.png" alt="Person Image" width="351" height="702" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/浮士德logo.png" alt="Small Image" width="60" height="65"></h2>
+          <p>
+                
+浮士德是LC-B（即边狱公司巴士部）的一位罪人，编号为02</p>
+            <p> 特质：傲慢，易倦怠</p>
+          <p>该罪人开发了边狱公司的巴士——梅菲斯托费勒斯[1]的引擎。她声称在都市中，没有人能在智慧层面上与她相媲美[2]，这话未必就是错的。也许在和经理您交谈的时候，您会发现她的态度高高在上，而这样的态度也许会败坏您的心情。由于该罪人举止傲慢，仿佛不在乎任何人，让她有所改善可能性几乎为零。我们建议您只要应付一下，点点头就行。虽然她才智异禀，但我们尚不清楚清楚如何利用她的才能。说不定，经理您能找到方法？</p>
+          <p> 相关考据</p>
+          <p> [1]、原著中的魔鬼。梅菲斯特是一个“永远否定的魔鬼” ，与上帝打了赌，梅菲斯特会用自己魔鬼的力量办到浮士德想要做到的事（虽然有的时候梅菲斯特也没办法），但当浮士德感到满足时，他（并非笔误，浮士德在原文中就是男的）的灵魂就会被梅菲斯特收走。</p>
+            <p> [2]、浮士德在原文中就是一个全方面发展的天才，这和哥德本人是一样的。 </p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>

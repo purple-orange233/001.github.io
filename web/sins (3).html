@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 225px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/堂吉诃德立绘.png" alt="Person Image" width="336" height="672" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/堂吉诃德logo.png" alt="Small Image" width="60" height="66"></h2>
+            <p>
+                
+堂吉诃德是LC-B（即边狱公司巴士部）的一位罪人，编号为03</p>
+            <p> 特质：过分热情，沉溺于宏大幻想</p>
+            <p>如果只以热情作为评判罪人资质的标准，该罪人无疑会拔得头筹。身为收尾人的狂热粉丝，她热衷于收集各种收尾人的相关纪念品，并将其装饰在全身上下。鉴于这种行为并不会对战斗产生实质性影响，因此无需特别对其采取措施。她对自身是正义的收尾人（真的有这样的存在吗？）一事深信不疑，并会做出像三流演员一般夸张的举止。为了使任务能够顺利进行，建议您配合她的节奏行动。</p>
+            <p> 相关考据</p>
+            <p>堂吉诃德出自小说《唐·吉诃德》（又译作《堂吉诃德》《堂·吉诃德》等,全名是《拉曼却的机敏堂·吉诃德传》）是西班牙作家塞万提斯·萨维德拉于1605年和1615年分两部分出版的长篇反骑士小说。 故事发生时，骑士早已绝迹一个多世纪，但主角阿隆索·吉哈诺（唐·吉诃德原名）却因为沉迷于骑士小说，时常幻想自己是个中世纪骑士，进而自封为&ldquo;唐·吉诃德·德·拉曼却&rdquo;（拉曼却地区的守护者），拉着邻居桑丘·潘沙做自己的仆人，&ldquo;行侠仗义&rdquo;、游走天下，做出了种种与时代相悖、令人匪夷所思的行径，结果四处碰壁。但最终从梦幻中苏醒过来,回到家乡后死去。 此处堂吉诃德脚上穿的鞋子名为驽骍难得(Rocinante),取自原文中堂·吉诃德的坐骑的名字,而堂吉诃德的初始e.g.o中的桑丘则取自与堂·吉诃德一同冒险的仆人的名字。</p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>

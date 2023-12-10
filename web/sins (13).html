@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 281px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/格里高尔立绘.png" alt="Person Image" width="281" height="450" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/格里高尔logo.png" alt="Small Image" width="60" height="66"></h2>
+            <p>
+                
+格里高尔是LC-B（即边狱公司B队）的一位罪人，编号为13</p>
+            <p> 特质：讨人厌，无法遏制的变形</p>
+            <p>与其他罪人相比，该罪人的性格更好相处。然而，随着情绪激动或者环境急剧变化，其身体的部分、有时甚至全身都可能会变化成类似昆虫（某种鞘翅目）的结构。如果您不希望被视为一位粗俗的经理（您不应如此），我们建议您谨慎地管理自己的表情，尽量避免流露出厌恶的情绪。尽管该罪人偶尔会说些愤世嫉俗的话，但只要掌握了技巧，就能与其顺利沟通。与他相处并非难事。</p>
+            <p> 相关考据              </p>
+            <p>格里高尔出自奥地利作家弗兰兹·卡夫卡创作的中篇小说《变形记》（The Metamorphosis）。 在原著中,格里高尔在一天早晨起床时发现自己变成了一只巨大的甲虫，他不仅丧失了生活和工作能力，还被视为家庭的负担和丑闻，其家人对他的态度骤然反转，最后，格里高尔在饥饿中孤独死去的荒诞故事，反映了世人唯利是图，对真情和人性不屑一顾，最终被社会挤压变形的现实，也反映了资本主义制度下真实的社会生活。 边狱巴士背景下的格里高尔因被改造为虫肢后遭都市中其他人的厌恶与原文中格里高尔变成昆虫后遭社会厌恶相对应。 </p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>

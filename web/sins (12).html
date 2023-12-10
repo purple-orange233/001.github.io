@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 288px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/奥提斯立绘.png" alt="Person Image" width="288" height="450" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/奥提斯logo.png" alt="Small Image" width="60" height="72"></h2>
+            <p>
+                
+奥提斯是LC-B（即边狱公司B队）的一位罪人，编号为12</p>
+            <p>  特质：精策</p>
+            <p>该罪人或许能够成为优秀的顾问，但这取决于经理的能力。然而，考虑到其多管闲事的性格，建议您适当地简短附和。由于她在包括战术在内的多个领域均是专家，因此寻求她的建议非常有效。此外，该罪人还对工坊技术有深入了解，因此您也可以放心地委任她对巴士进行简单的维护工作。 </p>
+            <p>[注意] - 与其他罪人不同，禁止阅览该罪人的过往记录。</p>
+          <p> [注意] - 请密切关注该罪人，以防止其在任务之外另起心思。</p>
+            <p> 相关考据              </p>
+            <p>奥提斯 (Outis)人物原型为《奥德赛》的主角奥德修斯 (Odysseus)，而原著中“奥提斯”是奥德修斯为欺骗独眼巨人起的假名，意为“没有人”。</p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>人物介绍</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end; /* 背景图片右对齐 */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #background-image {
+            position: fixed;
+            top: 0;
+            right: 0; /* 背景图片右对齐 */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #content-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            padding: 20px;
+        }
+        #person-image {
+            width: 394px;
+            height: 450px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        #person-intro {
+            flex: 1;
+            color: #FFD700; /* 字体颜色改为黄色 */
+        }
+
+        #person-intro h2 {
+            font-family: "黑体", sans-serif;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center; /* 垂直居中 */
+        }
+        #person-intro h2 img {
+            margin-left: 10px; /* 调整图片与文字的间距 */
+        }
+
+        #person-intro p {
+            font-family: "黑体", sans-serif; /* 使用黑体字体 */
+            font-weight: bold; /* 加粗 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* 添加阴影 */
+        }
+
+        #return-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #FFD700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <img id="background-image" src="../image/夜晚巴士-L0.png" alt="Background Image">
+
+    <div id="content-container">
+        <img src="../image/以实玛利立绘.png" alt="Person Image" width="394" height="450" id="person-image">
+
+        <div id="person-intro">
+          <h2>人物介绍<img src="../image/以实玛利logo.png" alt="Small Image" width="60" height="60"></h2>
+            <p>
+                
+以实玛利是LC-B（即边狱公司巴士部）的一位罪人，编号为08</p>
+            <p> 特质：强迫症</p>
+            <p> 身为经理，面对大多各有缺点的罪人，您或许会感到困惑和无力。然而请放心，该罪人是能够不加抱怨地执行各种命令的少数罪人之一。由于该罪人能做出合理的判断，因此若您想要寻求建议，看向她并予以提问应当是一个好办法。但请记住，她是从那片深远且广阔的水域中历经艰难旅途得以生还的罪人，故而其耐心可以说是深不见底，然而，一旦与她的关系开始走向歧途，要恢复可能就十分困难了。</p>
+            <p> 相关考据              </p>
+            <p>以实玛利出自19世纪美国小说家赫尔曼·梅尔维尔于1851年发表的一篇海洋题材的长篇小说《白鲸》。 《白鲸》主要讲述了捕鲸船“裴廊德”号船长亚哈在一次捕鲸过程中被凶残聪明的白鲸莫比·迪克咬掉了一条腿，因此他满怀复仇之念，一心想追捕这条白鲸，竟至失去理性，变成一个独断独行的偏执症狂。他的船几乎兜遍了全世界经历辗转，终于与莫比·迪克遭遇。经过三天追踪，他用鱼叉击中白鲸，但船被白鲸撞破，亚哈被鱼叉上的绳子缠住，掉入海中。全船人落海，只有水手以实玛利一人得救。 以实玛利取自《圣经》中人名，意为被遗弃的人。</p>
+      </div>
+</div>
+
+<button id="return-button" onclick="window.location.href='../index.html'">返回</button>
+</body>
+</html>
